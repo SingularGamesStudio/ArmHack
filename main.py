@@ -3,6 +3,8 @@ import re
 import numpy as np
 import matplotlib.pyplot as plt
 from catboost import CatBoostRegressor
+import warnings
+warnings.filterwarnings('ignore')
 def load_merge_data(dir) :
     df_train = pd.read_excel(
         dir+"/train.xlsx").rename(columns={"dt": "timestamp", "Цена на арматуру": "target"})
@@ -168,11 +170,12 @@ def make_prediction(model_path, features_dir, result_file, purchase_date):
     purchase_date = pd.to_datetime(purchase_date)
     res = pd.read_excel(result_file)
     res['Объём'] = make_orders_on_time_segment(models)
-    return res[res['dt']==purchase_date]['Объём']
+    return (res[res['dt']==purchase_date]['Объём']).values[0]
 
-'''model_path = 'path'
-features_dir = 'path'
-result_file = 'test.xlsx'
-purchase_date = '2023-05-17'
+'''
+model_path = './'
+features_dir = './data'
+result_file = features_dir+'/test.xlsx'
+purchase_date = '2023-01-30'
 
-make_prediction(model_path, features_dir, result_file, purchase_date)'''
+print(make_prediction(model_path, features_dir, result_file, purchase_date))'''
