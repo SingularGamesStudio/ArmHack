@@ -1,1 +1,1 @@
-https://drive.google.com/drive/u/0/folders/12BtAYlHl2K9YDb8koYtTlK4QZTj_EzxZ - собранные модели
+https://drive.google.com/drive/folders/1xW3Pt8H8I4AwnPb7bJ7ueouENRaU8Dzs?usp=sharing - собранные модели
