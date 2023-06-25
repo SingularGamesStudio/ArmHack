@@ -80,7 +80,7 @@ def prepare_data(merged_df):
     # Convert the "timestamp" column to datetime, if needed
     merged_df["timestamp"] = pd.to_datetime(merged_df["timestamp"])
 
-    with open("columns_with_high_nan.txt", "r", encoding='utf8') as file:
+    with open("models/columns_with_high_nan.txt", "r", encoding='utf8') as file:
         columns_to_drop = file.read().splitlines()
 
     merged_df = merged_df.drop(columns=columns_to_drop)
