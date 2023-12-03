@@ -1,3 +1,5 @@
+# Predicting armature prices (for hackaton "Цифровой прорыв 2023")
+
 https://drive.google.com/drive/folders/1xW3Pt8H8I4AwnPb7bJ7ueouENRaU8Dzs?usp=sharing - собранные модели
 
 https://colab.research.google.com/drive/18EsLzk0qe8fDPkEve5z50g56fu128FZl - train notebook
