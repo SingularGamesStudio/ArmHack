@@ -1,4 +1,4 @@
-# Predicting armature prices (for hackaton "Цифровой прорыв 2023")
+# Predicting armature prices (Hackaton "Цифровой прорыв 2023", I place)
 
 https://drive.google.com/drive/folders/1xW3Pt8H8I4AwnPb7bJ7ueouENRaU8Dzs?usp=sharing - собранные модели
 
